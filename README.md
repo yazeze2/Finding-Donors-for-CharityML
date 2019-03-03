@@ -11,13 +11,12 @@ The general requirements for this project are as follows:
 - matplotlib
 - seaborn
 - sci-kit learn
--
 
 ## Contents
 
 - **Basic Exploration and Visualization of Data**
 - **Data Preprocessing**
-  - **Transforming Skewed Continuous** - Features A dataset may sometimes contain at least one feature whose values tend to lie near a single number, but will also have a non-trivial number of vastly larger or smaller values than that single number. Algorithms can be sensitive to such distributions of values and can underperform if the range is not properly normalized.
+  - **Transforming Skewed Continuous Features** - Features A dataset may sometimes contain at least one feature whose values tend to lie near a single number, but will also have a non-trivial number of vastly larger or smaller values than that single number. Algorithms can be sensitive to such distributions of values and can underperform if the range is not properly normalized.
   - **Normalizing Numerical Features** - In addition to performing transformations on features that are highly skewed, it is often good practice to perform some type of scaling on numerical features. Applying a scaling to the data does not change the shape of each feature's distribution; however, normalization ensures that each feature is treated equally when applying supervised learners. Note that once scaling is applied, observing the data in its raw form will no longer have the same original meaning, as exampled below.
 - **Creating a Training and Predicting Pipeline** - To properly evaluate the performance of each model chosen, it's important that we create a training and predicting pipeline that allows us to quickly and effectively train models using various sizes of training data and perform predictions on the testing data.
 - **Model Tuning** - Using grid search (GridSearchCV) with different parameter/value combinations, the best performing model is tuned for even better results.
